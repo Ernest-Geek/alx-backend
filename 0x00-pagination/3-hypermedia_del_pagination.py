@@ -51,7 +51,7 @@ class Server:
             index(int): first required index
             page_size(int): required number of records per page
         """
-          dataset = self.indexed_dataset()
+        dataset = self.indexed_dataset()
         data_length = len(dataset)
         assert 0 <= index < data_length
         response = {}

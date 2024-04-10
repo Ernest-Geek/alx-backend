@@ -3,12 +3,17 @@ from flask import flask
 render template
 
 
-# create the flask app
+# start the flask app
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
+    """
+    Render the index.html template
+
+    return: Rendered html content
+    """
     return render_template('index.html')
 
 
